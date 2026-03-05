@@ -1281,14 +1281,77 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "text",
-                          "id": "RlfGG",
-                          "name": "Brand",
-                          "fill": "$Core",
-                          "content": "Example",
-                          "fontFamily": "Manrope",
-                          "fontSize": 20,
-                          "fontWeight": "700"
+                          "type": "frame",
+                          "id": "9V75j",
+                          "name": "Brand Lockup",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "quds4",
+                              "name": "Logo Mark",
+                              "width": 24,
+                              "height": 24,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 135,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "$Gradient Hero Start",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "$Gradient Hero End",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": 6,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "ZZcYv",
+                                  "name": "Inner",
+                                  "width": 20,
+                                  "height": 20,
+                                  "fill": "$Base",
+                                  "cornerRadius": 4,
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "AQOSu",
+                                      "name": "E",
+                                      "fill": "$Core",
+                                      "content": "E",
+                                      "fontFamily": "Manrope",
+                                      "fontSize": 14,
+                                      "fontWeight": "800"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "5yeuF",
+                              "name": "Brand Wordmark",
+                              "fill": "$Core",
+                              "content": "Example",
+                              "fontFamily": "Manrope",
+                              "fontSize": 20,
+                              "fontWeight": "700"
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1383,17 +1446,31 @@
                                 16,
                                 20
                               ],
+                              "justifyContent": "space_between",
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "2OnMt",
+                                  "id": "DbMt6",
                                   "name": "Logo",
-                                  "fill": "$Core",
+                                  "fill": "$Text",
                                   "content": "Example",
-                                  "fontFamily": "Manrope",
+                                  "fontFamily": "Inter",
                                   "fontSize": 20,
                                   "fontWeight": "700"
+                                },
+                                {
+                                  "id": "rPFnE",
+                                  "type": "ref",
+                                  "ref": "kOlZQ",
+                                  "name": "sidebarToggle",
+                                  "x": 204,
+                                  "y": 20,
+                                  "descendants": {
+                                    "H3bTH": {
+                                      "iconFontName": "chevrons-left"
+                                    }
+                                  }
                                 }
                               ]
                             },
@@ -1421,7 +1498,7 @@
                                       "iconFontName": "layout-dashboard"
                                     },
                                     "8hcyF": {
-                                      "content": "Dashboard"
+                                      "content": "Home"
                                     }
                                   }
                                 }
@@ -1451,6 +1528,120 @@
                               "id": "PVKSe",
                               "type": "ref",
                               "ref": "if3Mn",
+                              "name": "sbUser"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SJuUJ",
+                      "name": "Organism/Sidebar Collapsed",
+                      "reusable": true,
+                      "width": 84,
+                      "height": 500,
+                      "fill": "$Surface",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "right": 1
+                        },
+                        "fill": "$Border"
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HnLV0",
+                          "name": "Top",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "daxRq",
+                              "name": "BrandArea",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": [
+                                16,
+                                0,
+                                12,
+                                0
+                              ],
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "id": "xXWF1",
+                                  "type": "ref",
+                                  "ref": "kOlZQ",
+                                  "name": "sidebarToggle",
+                                  "descendants": {
+                                    "H3bTH": {
+                                      "iconFontName": "chevrons-right"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "n9gsA",
+                              "name": "NavItems",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "padding": [
+                                0,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "id": "SGr26",
+                                  "type": "ref",
+                                  "ref": "kItOQ",
+                                  "name": "sbItem1",
+                                  "width": "fill_container",
+                                  "descendants": {
+                                    "AsubY": {
+                                      "iconFontName": "layout-dashboard"
+                                    },
+                                    "8hcyF": {
+                                      "enabled": false
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jxnJz",
+                          "name": "Bottom",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "top": 1
+                            },
+                            "fill": "$Border"
+                          },
+                          "layout": "vertical",
+                          "padding": [
+                            16,
+                            22
+                          ],
+                          "children": [
+                            {
+                              "id": "p0V2L",
+                              "type": "ref",
+                              "ref": "XQzpf",
                               "name": "sbUser"
                             }
                           ]
@@ -1806,7 +1997,7 @@
                               "fill": "$Text Muted",
                               "textGrowth": "fixed-width",
                               "width": "fill_container",
-                              "content": "또는 SNS로 간편 가입",
+                              "content": "Or continue with social sign up",
                               "textAlign": "center",
                               "fontFamily": "Manrope",
                               "fontSize": 13,
@@ -1940,7 +2131,8 @@
                                       "iconFontName": "layout-dashboard"
                                     },
                                     "8hcyF": {
-                                      "content": "홈"
+                                      "content": "Home",
+                                      "enabled": true
                                     }
                                   }
                                 }
@@ -1966,7 +2158,6 @@
               "type": "frame",
               "id": "nMQsC",
               "name": "Example Design System",
-              "width": 960,
               "fill": "$Base",
               "cornerRadius": 12,
               "layout": "vertical",
@@ -2294,7 +2485,7 @@
                       "id": "tJKzv",
                       "name": "gradDesc",
                       "fill": "$Text Muted",
-                      "content": "대각선(좌상→우하) 그라데이션으로 화면에 깊이와 따뜻함을 더합니다.",
+                      "content": "A diagonal (top-left to bottom-right) gradient adds depth and warmth to the screen.",
                       "fontFamily": "Manrope",
                       "fontSize": 14,
                       "fontWeight": "normal"
@@ -2374,7 +2565,7 @@
                                   "id": "DUlJr",
                                   "name": "gpUse",
                                   "fill": "$Text Muted",
-                                  "content": "전체 페이지 배경",
+                                  "content": "Full-page background",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -2455,7 +2646,7 @@
                                   "id": "mh4EX",
                                   "name": "gsUse",
                                   "fill": "$Text Muted",
-                                  "content": "카드/패널 배경",
+                                  "content": "Card/panel background",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -2535,7 +2726,7 @@
                                   "id": "isLTm",
                                   "name": "ghUse",
                                   "fill": "$Text Muted",
-                                  "content": "히어로/배너 영역",
+                                  "content": "Hero/banner area",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -2616,7 +2807,7 @@
                                   "id": "h7nSM",
                                   "name": "gsuUse",
                                   "fill": "$Text Muted",
-                                  "content": "섹션 분리용 약한 배경",
+                                  "content": "Subtle background for section separation",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -2638,13 +2829,12 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 838
+                  "y": 829
                 },
                 {
                   "type": "frame",
                   "id": "ZgT6k",
                   "name": "Typography Section",
-                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 20,
                   "padding": [
@@ -2668,7 +2858,6 @@
                       "type": "frame",
                       "id": "vYnir",
                       "name": "Samples",
-                      "width": "fill_container",
                       "layout": "vertical",
                       "gap": 24,
                       "children": [
@@ -2676,7 +2865,6 @@
                           "type": "frame",
                           "id": "mrvl5",
                           "name": "h1Row",
-                          "width": "fill_container",
                           "gap": 16,
                           "children": [
                             {
@@ -2696,7 +2884,7 @@
                               "id": "mcWdq",
                               "name": "h1Sample",
                               "fill": "$Text",
-                              "content": "운영을 고려한 인증 아키텍처",
+                              "content": "Operations-ready authentication architecture",
                               "lineHeight": 1.25,
                               "fontFamily": "Manrope",
                               "fontSize": 32,
@@ -2738,7 +2926,7 @@
                               "id": "Yr3So",
                               "name": "h2Sample",
                               "fill": "$Text",
-                              "content": "Web/Mobile 인증 흐름 분리",
+                              "content": "Separated Web/Mobile authentication flow",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 24,
@@ -2760,7 +2948,6 @@
                           "type": "frame",
                           "id": "VNXUY",
                           "name": "bodyRow",
-                          "width": "fill_container",
                           "gap": 16,
                           "children": [
                             {
@@ -2780,7 +2967,7 @@
                               "id": "qj9dr",
                               "name": "bodySample",
                               "fill": "$Text",
-                              "content": "Reverse Proxy와 Kubernetes 내부 네트워크를 기준으로 인증/API 트래픽을 통제합니다.",
+                              "content": "Control authentication/API traffic via Reverse Proxy and the internal Kubernetes network.",
                               "lineHeight": 1.5,
                               "fontFamily": "Manrope",
                               "fontSize": 16,
@@ -2822,7 +3009,7 @@
                               "id": "qwujo",
                               "name": "capSample",
                               "fill": "$Text Muted",
-                              "content": "Web은 Session+HttpOnly Cookie, Mobile은 JWT 확장 예정",
+                              "content": "Web uses Session + HttpOnly Cookie; Mobile plans JWT extension.",
                               "lineHeight": 1.54,
                               "fontFamily": "Manrope",
                               "fontSize": 13,
@@ -2864,7 +3051,7 @@
                               "id": "2cl0n",
                               "name": "btnSample",
                               "fill": "$Text",
-                              "content": "문서 바로가기",
+                              "content": "Go to documentation",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 15,
@@ -2895,7 +3082,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1162
+                  "y": 1147
                 },
                 {
                   "type": "frame",
@@ -3122,7 +3309,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1340
+                  "y": 1325
                 },
                 {
                   "type": "frame",
@@ -3286,7 +3473,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1511
+                  "y": 1496
                 },
                 {
                   "type": "frame",
@@ -3412,7 +3599,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1617
+                  "y": 1602
                 },
                 {
                   "type": "frame",
@@ -3514,7 +3701,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1723
+                  "y": 1708
                 },
                 {
                   "type": "frame",
@@ -3710,7 +3897,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1853
+                  "y": 1838
                 },
                 {
                   "type": "frame",
@@ -3911,7 +4098,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 2159
+                  "y": 2144
                 },
                 {
                   "type": "frame",
@@ -4091,7 +4278,7 @@
                                 "thickness": 1,
                                 "fill": "$Border"
                               },
-                              "x": 219,
+                              "x": 242,
                               "y": 16
                             },
                             "vTl9J/XzaSy": {
@@ -4106,7 +4293,7 @@
                             },
                             "ORzhT": {
                               "fill": "$Text",
-                              "x": 321,
+                              "x": 344,
                               "y": 16
                             },
                             "ORzhT/rj6ar": {
@@ -4178,7 +4365,7 @@
                                 "thickness": 1,
                                 "fill": "$Border"
                               },
-                              "x": 219,
+                              "x": 242,
                               "y": 16
                             },
                             "vTl9J/XzaSy": {
@@ -4193,7 +4380,7 @@
                             },
                             "ORzhT": {
                               "fill": "$Text",
-                              "x": 321,
+                              "x": 344,
                               "y": 16
                             },
                             "ORzhT/rj6ar": {
@@ -4229,11 +4416,8 @@
                           "x": 24,
                           "y": 16.5
                         },
-                        "RlfGG": {
-                          "fill": "$Text"
-                        },
                         "qcmC1": {
-                          "x": 712,
+                          "x": 758,
                           "y": 12
                         },
                         "P2VAN": {
@@ -4283,7 +4467,6 @@
               "theme": {
                 "mode": "dark"
               },
-              "width": 960,
               "fill": "$Base",
               "cornerRadius": 12,
               "layout": "vertical",
@@ -4610,7 +4793,7 @@
                       "id": "hVxfa",
                       "name": "dkGradDesc",
                       "fill": "$Text Muted",
-                      "content": "대각선(좌상→우하) 그라데이션으로 화면에 깊이와 따뜻함을 더합니다.",
+                      "content": "A diagonal (top-left to bottom-right) gradient adds depth and warmth to the screen.",
                       "fontFamily": "Manrope",
                       "fontSize": 14,
                       "fontWeight": "normal"
@@ -4695,7 +4878,7 @@
                                   "id": "4gIU6",
                                   "name": "dgpUse",
                                   "fill": "$Text Muted",
-                                  "content": "전체 페이지 배경",
+                                  "content": "Full-page background",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -4776,7 +4959,7 @@
                                   "id": "P8h1I",
                                   "name": "dgsUse",
                                   "fill": "$Text Muted",
-                                  "content": "카드/패널 배경",
+                                  "content": "Card/panel background",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -4861,7 +5044,7 @@
                                   "id": "ApePC",
                                   "name": "dghUse",
                                   "fill": "$Text Muted",
-                                  "content": "히어로/배너 영역",
+                                  "content": "Hero/banner area",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -4942,7 +5125,7 @@
                                   "id": "DlMbk",
                                   "name": "dgsuUse",
                                   "fill": "$Text Muted",
-                                  "content": "섹션 분리용 약한 배경",
+                                  "content": "Subtle background for section separation",
                                   "fontFamily": "Manrope",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -4964,13 +5147,12 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 838
+                  "y": 829
                 },
                 {
                   "type": "frame",
                   "id": "INIlc",
                   "name": "Typography Section",
-                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 20,
                   "padding": [
@@ -4994,7 +5176,6 @@
                       "type": "frame",
                       "id": "thnUs",
                       "name": "Samples",
-                      "width": "fill_container",
                       "layout": "vertical",
                       "gap": 24,
                       "children": [
@@ -5002,7 +5183,6 @@
                           "type": "frame",
                           "id": "8r2eT",
                           "name": "dh1Row",
-                          "width": "fill_container",
                           "gap": 16,
                           "children": [
                             {
@@ -5022,7 +5202,7 @@
                               "id": "G6qkr",
                               "name": "dh1Sample",
                               "fill": "$Text",
-                              "content": "운영을 고려한 인증 아키텍처",
+                              "content": "Operations-ready authentication architecture",
                               "lineHeight": 1.25,
                               "fontFamily": "Manrope",
                               "fontSize": 32,
@@ -5064,7 +5244,7 @@
                               "id": "33q1P",
                               "name": "dh2Sample",
                               "fill": "$Text",
-                              "content": "Web/Mobile 인증 흐름 분리",
+                              "content": "Separated Web/Mobile authentication flow",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 24,
@@ -5086,7 +5266,6 @@
                           "type": "frame",
                           "id": "wORel",
                           "name": "dbodyRow",
-                          "width": "fill_container",
                           "gap": 16,
                           "children": [
                             {
@@ -5106,7 +5285,7 @@
                               "id": "8eAK6",
                               "name": "dbodySample",
                               "fill": "$Text",
-                              "content": "Reverse Proxy와 Kubernetes 내부 네트워크를 기준으로 인증/API 트래픽을 통제합니다.",
+                              "content": "Control authentication/API traffic via Reverse Proxy and the internal Kubernetes network.",
                               "lineHeight": 1.5,
                               "fontFamily": "Manrope",
                               "fontSize": 16,
@@ -5148,7 +5327,7 @@
                               "id": "cW2ox",
                               "name": "dcapSample",
                               "fill": "$Text Muted",
-                              "content": "Web은 Session+HttpOnly Cookie, Mobile은 JWT 확장 예정",
+                              "content": "Web uses Session + HttpOnly Cookie; Mobile plans JWT extension.",
                               "lineHeight": 1.54,
                               "fontFamily": "Manrope",
                               "fontSize": 13,
@@ -5190,7 +5369,7 @@
                               "id": "sHmIy",
                               "name": "dbtnSample",
                               "fill": "$Text",
-                              "content": "문서 바로가기",
+                              "content": "Go to documentation",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 15,
@@ -5221,7 +5400,7 @@
                   "name": "dkTypoDivider",
                   "height": 1,
                   "x": 0,
-                  "y": 1162
+                  "y": 1147
                 },
                 {
                   "type": "frame",
@@ -5443,7 +5622,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1340
+                  "y": 1325
                 },
                 {
                   "type": "frame",
@@ -5607,7 +5786,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1511
+                  "y": 1496
                 },
                 {
                   "type": "frame",
@@ -5731,7 +5910,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1617
+                  "y": 1602
                 },
                 {
                   "type": "frame",
@@ -5811,7 +5990,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1723
+                  "y": 1708
                 },
                 {
                   "type": "frame",
@@ -6010,7 +6189,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1853
+                  "y": 1838
                 },
                 {
                   "type": "frame",
@@ -6206,7 +6385,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 2159
+                  "y": 2144
                 },
                 {
                   "type": "frame",
@@ -6385,7 +6564,7 @@
                                 "thickness": 1,
                                 "fill": "$Border"
                               },
-                              "x": 219,
+                              "x": 242,
                               "y": 16
                             },
                             "vTl9J/XzaSy": {
@@ -6399,7 +6578,7 @@
                             },
                             "ORzhT": {
                               "fill": "$Core",
-                              "x": 321,
+                              "x": 344,
                               "y": 16
                             },
                             "ORzhT/rj6ar": {
@@ -6470,7 +6649,7 @@
                                 "thickness": 1,
                                 "fill": "$Border"
                               },
-                              "x": 219,
+                              "x": 242,
                               "y": 16
                             },
                             "vTl9J/XzaSy": {
@@ -6484,7 +6663,7 @@
                             },
                             "ORzhT": {
                               "fill": "$Core",
-                              "x": 321,
+                              "x": 344,
                               "y": 16
                             },
                             "ORzhT/rj6ar": {
@@ -6519,11 +6698,8 @@
                           "x": 24,
                           "y": 16.5
                         },
-                        "RlfGG": {
-                          "fill": "$Text"
-                        },
                         "qcmC1": {
-                          "x": 712,
+                          "x": 758,
                           "y": 12
                         },
                         "P2VAN": {
@@ -8672,7 +8848,7 @@
     {
       "type": "frame",
       "id": "63zpp",
-      "x": 2220,
+      "x": 3149,
       "y": 0,
       "name": "Auth/Login Layer",
       "fill": "$View BG",
@@ -8685,7 +8861,7 @@
           "id": "fnjCm",
           "name": "loginTitle",
           "fill": "$Text",
-          "content": "로그인 화면",
+          "content": "Login Screen",
           "fontFamily": "Manrope",
           "fontSize": 28,
           "fontWeight": "700"
@@ -8761,7 +8937,7 @@
                               "id": "oEU5n",
                               "name": "Title",
                               "fill": "$Text",
-                              "content": "로그인",
+                              "content": "Login",
                               "fontFamily": "Manrope",
                               "fontSize": 18,
                               "fontWeight": "600"
@@ -8771,7 +8947,7 @@
                               "id": "ykfFh",
                               "name": "Description",
                               "fill": "$Text Muted",
-                              "content": "계정 정보를 입력해 주세요.",
+                              "content": "Please enter your account details.",
                               "fontFamily": "Manrope",
                               "fontSize": 14,
                               "fontWeight": "normal"
@@ -8800,16 +8976,16 @@
                               "name": "mobileEmail",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "이메일"
+                                  "content": "Email"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "mail"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "name@company.com"
+                                  "content": "name@email.com"
                                 },
                                 "ZaQH4": {
-                                  "content": "회사 이메일을 입력하세요."
+                                  "content": "Enter your email."
                                 }
                               }
                             },
@@ -8821,16 +8997,16 @@
                               "name": "mobilePass",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "lock"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "ZaQH4": {
-                                  "content": "비밀번호를 입력하세요."
+                                  "content": "Enter your password."
                                 }
                               }
                             },
@@ -8850,7 +9026,7 @@
                           "enabled": false
                         },
                         "ORzhT/O8Opq": {
-                          "content": "로그인"
+                          "content": "Login"
                         }
                       }
                     }
@@ -8923,7 +9099,7 @@
                               "id": "BUW4R",
                               "name": "Title",
                               "fill": "$Text",
-                              "content": "로그인",
+                              "content": "Login",
                               "fontFamily": "Manrope",
                               "fontSize": 18,
                               "fontWeight": "600"
@@ -8933,7 +9109,7 @@
                               "id": "ZPs6F",
                               "name": "Description",
                               "fill": "$Text Muted",
-                              "content": "계정 정보를 입력해 주세요.",
+                              "content": "Please enter your account details.",
                               "fontFamily": "Manrope",
                               "fontSize": 14,
                               "fontWeight": "normal"
@@ -8962,16 +9138,16 @@
                               "name": "webEmail",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "이메일"
+                                  "content": "Email"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "mail"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "name@company.com"
+                                  "content": "name@email.com"
                                 },
                                 "ZaQH4": {
-                                  "content": "회사 이메일"
+                                  "content": "Enter your email."
                                 }
                               }
                             },
@@ -8983,16 +9159,16 @@
                               "name": "webPass",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "lock"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "ZaQH4": {
-                                  "content": "비밀번호를 입력하세요."
+                                  "content": "Enter your password."
                                 }
                               }
                             },
@@ -9006,7 +9182,7 @@
                               "name": "loginWebSnsRef",
                               "descendants": {
                                 "h191p": {
-                                  "content": "또는 SNS로 간편 로그인"
+                                  "content": "Or continue with social login"
                                 }
                               }
                             }
@@ -9019,7 +9195,7 @@
                           "enabled": false
                         },
                         "ORzhT/O8Opq": {
-                          "content": "로그인"
+                          "content": "Login"
                         }
                       }
                     }
@@ -9044,7 +9220,7 @@
               "id": "NF3oR",
               "name": "errorTitle",
               "fill": "$Text",
-              "content": "토스트 표시",
+              "content": "Toast Preview",
               "fontFamily": "Manrope",
               "fontSize": 28,
               "fontWeight": "700"
@@ -9087,7 +9263,7 @@
                           "name": "loginMobileToast",
                           "descendants": {
                             "lOOw7": {
-                              "content": "로그인 실패: 이메일 또는 비밀번호를 확인하세요."
+                              "content": "Login failed: Check your email or password."
                             }
                           }
                         }
@@ -9104,8 +9280,8 @@
     {
       "type": "frame",
       "id": "XGG5X",
-      "x": 2220,
-      "y": 1387,
+      "x": 3149,
+      "y": 1388,
       "name": "Auth/Signup Layer",
       "fill": "$View BG",
       "layout": "vertical",
@@ -9117,7 +9293,7 @@
           "id": "5U5YA",
           "name": "signupTitle",
           "fill": "$Text",
-          "content": "회원가입 화면",
+          "content": "Sign Up Screen",
           "fontFamily": "Manrope",
           "fontSize": 28,
           "fontWeight": "700"
@@ -9171,10 +9347,10 @@
                       "name": "sMobileCard",
                       "descendants": {
                         "XWwUM": {
-                          "content": "회원가입"
+                          "content": "Sign Up"
                         },
                         "FBkFC": {
-                          "content": "새 계정을 생성해 주세요."
+                          "content": "Create a new account."
                         },
                         "vG9G7": {
                           "type": "frame",
@@ -9198,16 +9374,16 @@
                               "name": "sName",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "이름"
+                                  "content": "Name"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "user"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "홍길동"
+                                  "content": "John Doe"
                                 },
                                 "ZaQH4": {
-                                  "content": "실명을 입력하세요."
+                                  "content": "Enter your full name."
                                 }
                               }
                             },
@@ -9219,7 +9395,7 @@
                               "name": "sEmail",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "이메일"
+                                  "content": "Email"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "mail"
@@ -9228,7 +9404,7 @@
                                   "content": "name@company.com"
                                 },
                                 "ZaQH4": {
-                                  "content": "로그인에 사용할 이메일을 입력하세요."
+                                  "content": "Enter the email for sign in."
                                 }
                               }
                             },
@@ -9240,16 +9416,16 @@
                               "name": "sPass",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "lock"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "ZaQH4": {
-                                  "content": "8자 이상 입력하세요."
+                                  "content": "Please enter your password."
                                 }
                               }
                             },
@@ -9261,16 +9437,16 @@
                               "name": "sMobileConfirm",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "비밀번호 확인"
+                                  "content": "Confirm Password"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "lock"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "비밀번호 확인"
+                                  "content": "Confirm Password"
                                 },
                                 "ZaQH4": {
-                                  "content": "비밀번호를 한번 더 입력하세요."
+                                  "content": "Re-enter your password."
                                 }
                               }
                             },
@@ -9296,7 +9472,7 @@
                           "enabled": false
                         },
                         "ORzhT/O8Opq": {
-                          "content": "회원가입"
+                          "content": "Sign Up"
                         }
                       }
                     }
@@ -9348,10 +9524,10 @@
                       "name": "sWebCard",
                       "descendants": {
                         "XWwUM": {
-                          "content": "회원가입"
+                          "content": "Sign Up"
                         },
                         "FBkFC": {
-                          "content": "새 계정을 생성해 주세요."
+                          "content": "Create a new account."
                         },
                         "vG9G7": {
                           "type": "frame",
@@ -9375,16 +9551,16 @@
                               "name": "sWebName",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "이름"
+                                  "content": "Name"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "user"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "홍길동"
+                                  "content": "John Doe"
                                 },
                                 "ZaQH4": {
-                                  "content": "실명을 입력하세요."
+                                  "content": "Enter your full name."
                                 }
                               }
                             },
@@ -9396,7 +9572,7 @@
                               "name": "sWebEmail",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "이메일"
+                                  "content": "Email"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "mail"
@@ -9405,7 +9581,7 @@
                                   "content": "name@company.com"
                                 },
                                 "ZaQH4": {
-                                  "content": "로그인에 사용할 이메일을 입력하세요."
+                                  "content": "Enter the email for sign in."
                                 }
                               }
                             },
@@ -9417,16 +9593,16 @@
                               "name": "sWebPass",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "lock"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "비밀번호"
+                                  "content": "Password"
                                 },
                                 "ZaQH4": {
-                                  "content": "8자 이상 입력하세요."
+                                  "content": "Please enter your password."
                                 }
                               }
                             },
@@ -9438,16 +9614,16 @@
                               "name": "sWebConfirm",
                               "descendants": {
                                 "OKtq2": {
-                                  "content": "비밀번호 확인"
+                                  "content": "Confirm Password"
                                 },
                                 "aHy9b/O9Cab": {
                                   "iconFontName": "lock"
                                 },
                                 "aHy9b/QdYPT": {
-                                  "content": "비밀번호 확인"
+                                  "content": "Confirm Password"
                                 },
                                 "ZaQH4": {
-                                  "content": "비밀번호를 한번 더 입력하세요."
+                                  "content": "Re-enter your password."
                                 }
                               }
                             },
@@ -9473,7 +9649,7 @@
                           "enabled": false
                         },
                         "ORzhT/O8Opq": {
-                          "content": "회원가입"
+                          "content": "Sign Up"
                         }
                       }
                     }
@@ -9498,7 +9674,7 @@
               "id": "gMeus",
               "name": "errorTitle",
               "fill": "$Text",
-              "content": "토스트 표시",
+              "content": "Toast Preview",
               "fontFamily": "Manrope",
               "fontSize": 28,
               "fontWeight": "700"
@@ -9541,7 +9717,7 @@
                           "name": "signupMobileToast",
                           "descendants": {
                             "lOOw7": {
-                              "content": "회원가입 실패: 입력값을 다시 확인해 주세요."
+                              "content": "Sign up failed: please check your input and try again."
                             }
                           }
                         }
@@ -9558,10 +9734,9 @@
     {
       "type": "frame",
       "id": "lRc5O",
-      "x": 3888,
+      "x": 5066,
       "y": 0,
       "name": "Main/Home Layer",
-      "width": 1900,
       "fill": "$View BG",
       "layout": "vertical",
       "gap": 20,
@@ -9572,7 +9747,7 @@
           "id": "Lu3OV",
           "name": "mainTitle",
           "fill": "$Text",
-          "content": "공지 화면",
+          "content": "Announcements Screen",
           "fontFamily": "Manrope",
           "fontSize": 28,
           "fontWeight": "700"
@@ -9581,7 +9756,6 @@
           "type": "frame",
           "id": "DTlre",
           "name": "mainRow",
-          "width": "fill_container",
           "gap": 24,
           "children": [
             {
@@ -9641,7 +9815,7 @@
                               "id": "JIllU",
                               "name": "mobileHeaderTitle",
                               "fill": "$Text",
-                              "content": "홈",
+                              "content": "Home",
                               "fontFamily": "Manrope",
                               "fontSize": 18,
                               "fontWeight": "700"
@@ -9737,18 +9911,6 @@
                       "height": "fill_container",
                       "children": [
                         {
-                          "id": "Qqyxy",
-                          "type": "ref",
-                          "ref": "GGx7s",
-                          "height": "fill_container",
-                          "name": "webSidebar",
-                          "descendants": {
-                            "GXjug/8hcyF": {
-                              "content": "홈"
-                            }
-                          }
-                        },
-                        {
                           "type": "frame",
                           "id": "e18as",
                           "name": "webContent",
@@ -9756,7 +9918,102 @@
                           "height": "fill_container",
                           "layout": "vertical",
                           "gap": 16,
-                          "padding": 20
+                          "children": [
+                            {
+                              "id": "jsFiI",
+                              "type": "ref",
+                              "ref": "SJuUJ",
+                              "name": "webSidebarCollapsed",
+                              "height": "fill_container"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gfBYT",
+              "name": "WebTablet (Comparison)",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XKGMg",
+                  "name": "webLabel",
+                  "fill": "$Text",
+                  "content": "Web / Tablet (Compare)",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "OTR1q",
+                  "name": "Main/WebTablet",
+                  "width": 1024,
+                  "height": 768,
+                  "fill": "$Surface Soft",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "jtVcW",
+                      "type": "ref",
+                      "ref": "xhDT0",
+                      "width": "fill_container",
+                      "name": "webNav",
+                      "descendants": {
+                        "qcmC1": {
+                          "enabled": true
+                        },
+                        "P2VAN": {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "jC1g7": {
+                          "x": 48,
+                          "y": 0
+                        },
+                        "2qHWT": {
+                          "x": 96,
+                          "y": 2
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IeXxl",
+                      "name": "webBody",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "91GVs",
+                          "name": "webContent",
+                          "width": "fill_container",
+                          "height": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "id": "EWnpO",
+                              "type": "ref",
+                              "ref": "GGx7s",
+                              "name": "webSidebarExpanded",
+                              "height": "fill_container"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -10257,6 +10514,10 @@
     "State Info": {
       "type": "color",
       "value": "$Accent"
+    },
+    "menu_organisms_label": {
+      "type": "string",
+      "value": "Organisms"
     }
   }
 }
