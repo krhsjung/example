@@ -981,6 +981,42 @@
                       "fill": "$Accent"
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PMFJJ",
+                  "name": "Atom/Theme Buttons",
+                  "reusable": true,
+                  "gap": 8,
+                  "children": [
+                    {
+                      "id": "Pyt0s",
+                      "type": "ref",
+                      "ref": "kOlZQ",
+                      "name": "darkBtn",
+                      "descendants": {
+                        "H3bTH": {
+                          "iconFontName": "moon"
+                        }
+                      }
+                    },
+                    {
+                      "id": "OaJOm",
+                      "type": "ref",
+                      "ref": "kOlZQ",
+                      "name": "lightBtn",
+                      "theme": {
+                        "mode": "dark"
+                      },
+                      "x": 44,
+                      "y": 0,
+                      "descendants": {
+                        "H3bTH": {
+                          "iconFontName": "sun"
+                        }
+                      }
+                    }
+                  ]
                 }
               ]
             },
@@ -1253,62 +1289,6 @@
                           "fontFamily": "Manrope",
                           "fontSize": 20,
                           "fontWeight": "700"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "gWxIf",
-                          "name": "Links",
-                          "gap": 8,
-                          "children": [
-                            {
-                              "id": "TNity",
-                              "type": "ref",
-                              "ref": "p9DPE",
-                              "name": "navLink1",
-                              "descendants": {
-                                "viE3Z": {
-                                  "enabled": false
-                                },
-                                "VHC60": {
-                                  "content": "Products",
-                                  "fill": "$Text",
-                                  "fontWeight": "500"
-                                }
-                              }
-                            },
-                            {
-                              "id": "kkR3F",
-                              "type": "ref",
-                              "ref": "p9DPE",
-                              "name": "navLink2",
-                              "descendants": {
-                                "viE3Z": {
-                                  "enabled": false
-                                },
-                                "VHC60": {
-                                  "content": "Pricing",
-                                  "fill": "$Text Muted",
-                                  "fontWeight": "500"
-                                }
-                              }
-                            },
-                            {
-                              "id": "U0F28",
-                              "type": "ref",
-                              "ref": "p9DPE",
-                              "name": "navLink3",
-                              "descendants": {
-                                "viE3Z": {
-                                  "enabled": false
-                                },
-                                "VHC60": {
-                                  "content": "About",
-                                  "fill": "$Text Muted",
-                                  "fontWeight": "500"
-                                }
-                              }
-                            }
-                          ]
                         }
                       ]
                     },
@@ -1363,7 +1343,6 @@
                   "id": "Jogp3",
                   "name": "Organisms Row",
                   "clip": true,
-                  "width": "fill_container",
                   "gap": 24,
                   "children": [
                     {
@@ -1443,51 +1422,6 @@
                                     },
                                     "8hcyF": {
                                       "content": "Dashboard"
-                                    }
-                                  }
-                                },
-                                {
-                                  "id": "vy4Jo",
-                                  "type": "ref",
-                                  "ref": "E7XW9",
-                                  "width": "fill_container",
-                                  "name": "sbItem2",
-                                  "descendants": {
-                                    "OfDbY": {
-                                      "iconFontName": "users"
-                                    },
-                                    "5s5qU": {
-                                      "content": "Users"
-                                    }
-                                  }
-                                },
-                                {
-                                  "id": "47CSh",
-                                  "type": "ref",
-                                  "ref": "E7XW9",
-                                  "width": "fill_container",
-                                  "name": "sbItem3",
-                                  "descendants": {
-                                    "OfDbY": {
-                                      "iconFontName": "settings"
-                                    },
-                                    "5s5qU": {
-                                      "content": "Settings"
-                                    }
-                                  }
-                                },
-                                {
-                                  "id": "GDI0H",
-                                  "type": "ref",
-                                  "ref": "E7XW9",
-                                  "width": "fill_container",
-                                  "name": "sbItem4",
-                                  "descendants": {
-                                    "OfDbY": {
-                                      "iconFontName": "file-text"
-                                    },
-                                    "5s5qU": {
-                                      "content": "Reports"
                                     }
                                   }
                                 }
@@ -1845,6 +1779,172 @@
                               "iconFontName": "x",
                               "iconFontFamily": "lucide",
                               "fill": "$Text Muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GplgC",
+                          "name": "Organism/Mobile SNS Buttons",
+                          "reusable": true,
+                          "width": 360,
+                          "fill": "$Surface Soft",
+                          "cornerRadius": 10,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$Border"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h191p",
+                              "name": "signupMobileSnsText",
+                              "fill": "$Text Muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "또는 SNS로 간편 가입",
+                              "textAlign": "center",
+                              "fontFamily": "Manrope",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "v4uu6",
+                              "name": "signupMobileSnsRow",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "children": [
+                                {
+                                  "id": "3EDMe",
+                                  "type": "ref",
+                                  "ref": "h3ipx",
+                                  "width": "fill_container",
+                                  "name": "signupMobileGoogle",
+                                  "fill": "$Surface",
+                                  "descendants": {
+                                    "YCXQt": {
+                                      "iconFontName": "chrome",
+                                      "enabled": false
+                                    },
+                                    "yFTt2": {
+                                      "content": "Google"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "t3zYY",
+                                  "type": "ref",
+                                  "ref": "h3ipx",
+                                  "width": "fill_container",
+                                  "name": "signupMobileApple",
+                                  "fill": "$Surface",
+                                  "descendants": {
+                                    "YCXQt": {
+                                      "iconFontName": "apple",
+                                      "enabled": false
+                                    },
+                                    "yFTt2": {
+                                      "content": "Apple"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mAcIl",
+                      "name": "Organism/Mobile Menu Overlay",
+                      "reusable": true,
+                      "width": 390,
+                      "height": 690,
+                      "fill": "$Surface",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$Border"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dz6Uh",
+                          "name": "openHeader",
+                          "width": "fill_container",
+                          "padding": [
+                            4,
+                            2
+                          ],
+                          "justifyContent": "end",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "Us41A",
+                              "type": "ref",
+                              "ref": "kOlZQ",
+                              "name": "menuBtn",
+                              "descendants": {
+                                "H3bTH": {
+                                  "iconFontName": "x"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "r2A0v",
+                          "name": "menuOpenBody",
+                          "width": "fill_container",
+                          "height": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "DYcXG",
+                              "name": "drawer",
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": "$Surface Soft",
+                              "cornerRadius": 12,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "$Border"
+                              },
+                              "layout": "vertical",
+                              "gap": 8,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "id": "31RY5",
+                                  "type": "ref",
+                                  "ref": "kItOQ",
+                                  "width": "fill_container",
+                                  "name": "overlayItem1",
+                                  "descendants": {
+                                    "AsubY": {
+                                      "iconFontName": "layout-dashboard"
+                                    },
+                                    "8hcyF": {
+                                      "content": "홈"
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           ]
                         }
@@ -2596,7 +2696,7 @@
                               "id": "mcWdq",
                               "name": "h1Sample",
                               "fill": "$Text",
-                              "content": "일상에 스며드는 안심.",
+                              "content": "운영을 고려한 인증 아키텍처",
                               "lineHeight": 1.25,
                               "fontFamily": "Manrope",
                               "fontSize": 32,
@@ -2638,7 +2738,7 @@
                               "id": "Yr3So",
                               "name": "h2Sample",
                               "fill": "$Text",
-                              "content": "조용하고 따뜻한 돌봄",
+                              "content": "Web/Mobile 인증 흐름 분리",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 24,
@@ -2680,7 +2780,7 @@
                               "id": "qj9dr",
                               "name": "bodySample",
                               "fill": "$Text",
-                              "content": "Example은 가정의 안전을 조용히 지켜주는 서비스입니다.",
+                              "content": "Reverse Proxy와 Kubernetes 내부 네트워크를 기준으로 인증/API 트래픽을 통제합니다.",
                               "lineHeight": 1.5,
                               "fontFamily": "Manrope",
                               "fontSize": 16,
@@ -2722,7 +2822,7 @@
                               "id": "qwujo",
                               "name": "capSample",
                               "fill": "$Text Muted",
-                              "content": "보조 텍스트 및 캡션 영역에 사용됩니다.",
+                              "content": "Web은 Session+HttpOnly Cookie, Mobile은 JWT 확장 예정",
                               "lineHeight": 1.54,
                               "fontFamily": "Manrope",
                               "fontSize": 13,
@@ -2764,7 +2864,7 @@
                               "id": "2cl0n",
                               "name": "btnSample",
                               "fill": "$Text",
-                              "content": "BUTTON TEXT",
+                              "content": "문서 바로가기",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 15,
@@ -2795,7 +2895,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1161
+                  "y": 1162
                 },
                 {
                   "type": "frame",
@@ -3022,7 +3122,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1339
+                  "y": 1340
                 },
                 {
                   "type": "frame",
@@ -3186,7 +3286,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1510
+                  "y": 1511
                 },
                 {
                   "type": "frame",
@@ -3312,7 +3412,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1616
+                  "y": 1617
                 },
                 {
                   "type": "frame",
@@ -3414,7 +3514,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1722
+                  "y": 1723
                 },
                 {
                   "type": "frame",
@@ -3555,6 +3655,19 @@
                           }
                         },
                         {
+                          "id": "iENQW",
+                          "type": "ref",
+                          "ref": "kOlZQ",
+                          "name": "darkBtn",
+                          "x": 428,
+                          "y": 6,
+                          "descendants": {
+                            "H3bTH": {
+                              "iconFontName": "moon"
+                            }
+                          }
+                        },
+                        {
                           "id": "xka2A",
                           "type": "ref",
                           "ref": "hide8",
@@ -3597,7 +3710,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1852
+                  "y": 1853
                 },
                 {
                   "type": "frame",
@@ -3798,7 +3911,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 2158
+                  "y": 2159
                 },
                 {
                   "type": "frame",
@@ -4114,28 +4227,10 @@
                       "descendants": {
                         "RwkOt": {
                           "x": 24,
-                          "y": 10
+                          "y": 16.5
                         },
                         "RlfGG": {
                           "fill": "$Text"
-                        },
-                        "TNity/viE3Z": {
-                          "fill": "$Text Muted"
-                        },
-                        "TNity/VHC60": {
-                          "fill": "$Text"
-                        },
-                        "kkR3F/viE3Z": {
-                          "fill": "$Text Muted"
-                        },
-                        "kkR3F/VHC60": {
-                          "fill": "$Text Muted"
-                        },
-                        "U0F28/viE3Z": {
-                          "fill": "$Text Muted"
-                        },
-                        "U0F28/VHC60": {
-                          "fill": "$Text Muted"
                         },
                         "qcmC1": {
                           "x": 712,
@@ -4927,7 +5022,7 @@
                               "id": "G6qkr",
                               "name": "dh1Sample",
                               "fill": "$Text",
-                              "content": "일상에 스며드는 안심.",
+                              "content": "운영을 고려한 인증 아키텍처",
                               "lineHeight": 1.25,
                               "fontFamily": "Manrope",
                               "fontSize": 32,
@@ -4969,7 +5064,7 @@
                               "id": "33q1P",
                               "name": "dh2Sample",
                               "fill": "$Text",
-                              "content": "조용하고 따뜻한 돌봄",
+                              "content": "Web/Mobile 인증 흐름 분리",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 24,
@@ -5011,7 +5106,7 @@
                               "id": "8eAK6",
                               "name": "dbodySample",
                               "fill": "$Text",
-                              "content": "Example은 가정의 안전을 조용히 지켜주는 서비스입니다.",
+                              "content": "Reverse Proxy와 Kubernetes 내부 네트워크를 기준으로 인증/API 트래픽을 통제합니다.",
                               "lineHeight": 1.5,
                               "fontFamily": "Manrope",
                               "fontSize": 16,
@@ -5053,7 +5148,7 @@
                               "id": "cW2ox",
                               "name": "dcapSample",
                               "fill": "$Text Muted",
-                              "content": "보조 텍스트 및 캡션 영역에 사용됩니다.",
+                              "content": "Web은 Session+HttpOnly Cookie, Mobile은 JWT 확장 예정",
                               "lineHeight": 1.54,
                               "fontFamily": "Manrope",
                               "fontSize": 13,
@@ -5095,7 +5190,7 @@
                               "id": "sHmIy",
                               "name": "dbtnSample",
                               "fill": "$Text",
-                              "content": "BUTTON TEXT",
+                              "content": "문서 바로가기",
                               "lineHeight": 1.33,
                               "fontFamily": "Manrope",
                               "fontSize": 15,
@@ -5126,7 +5221,7 @@
                   "name": "dkTypoDivider",
                   "height": 1,
                   "x": 0,
-                  "y": 1161
+                  "y": 1162
                 },
                 {
                   "type": "frame",
@@ -5348,7 +5443,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1339
+                  "y": 1340
                 },
                 {
                   "type": "frame",
@@ -5512,7 +5607,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1510
+                  "y": 1511
                 },
                 {
                   "type": "frame",
@@ -5636,7 +5731,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1616
+                  "y": 1617
                 },
                 {
                   "type": "frame",
@@ -5716,7 +5811,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1722
+                  "y": 1723
                 },
                 {
                   "type": "frame",
@@ -5857,6 +5952,22 @@
                           }
                         },
                         {
+                          "id": "irQRd",
+                          "type": "ref",
+                          "ref": "kOlZQ",
+                          "name": "lightBtn",
+                          "theme": {
+                            "mode": "dark"
+                          },
+                          "x": 428,
+                          "y": 6,
+                          "descendants": {
+                            "H3bTH": {
+                              "iconFontName": "sun"
+                            }
+                          }
+                        },
+                        {
                           "id": "icXYm",
                           "type": "ref",
                           "ref": "hide8",
@@ -5899,7 +6010,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 1852
+                  "y": 1853
                 },
                 {
                   "type": "frame",
@@ -6095,7 +6206,7 @@
                   "fill": "$Border",
                   "height": 1,
                   "x": 0,
-                  "y": 2158
+                  "y": 2159
                 },
                 {
                   "type": "frame",
@@ -6406,19 +6517,10 @@
                       "descendants": {
                         "RwkOt": {
                           "x": 24,
-                          "y": 10
+                          "y": 16.5
                         },
                         "RlfGG": {
                           "fill": "$Text"
-                        },
-                        "TNity/VHC60": {
-                          "fill": "$Text"
-                        },
-                        "kkR3F/VHC60": {
-                          "fill": "$Text Muted"
-                        },
-                        "U0F28/VHC60": {
-                          "fill": "$Text Muted"
                         },
                         "qcmC1": {
                           "x": 712,
@@ -8556,6 +8658,1105 @@
                               "fontWeight": "normal"
                             }
                           ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "63zpp",
+      "x": 2220,
+      "y": 0,
+      "name": "Auth/Login Layer",
+      "fill": "$View BG",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 24,
+      "children": [
+        {
+          "type": "text",
+          "id": "fnjCm",
+          "name": "loginTitle",
+          "fill": "$Text",
+          "content": "로그인 화면",
+          "fontFamily": "Manrope",
+          "fontSize": 28,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "ND4mZ",
+          "name": "loginRow",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "OOQiC",
+              "name": "Mobile",
+              "width": 430,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jrQMC",
+                  "name": "mobileLabel",
+                  "fill": "$Text",
+                  "content": "Mobile",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "ZWsX8",
+                  "name": "Login/Mobile",
+                  "width": 390,
+                  "height": 844,
+                  "fill": "$Surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "95gxi",
+                      "type": "ref",
+                      "ref": "Miee5",
+                      "width": "fill_container",
+                      "name": "mobileCard",
+                      "descendants": {
+                        "CKCgR": {
+                          "type": "frame",
+                          "id": "RrOPb",
+                          "name": "Header",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 24,
+                          "children": [
+                            {
+                              "id": "4NNOv",
+                              "type": "ref",
+                              "ref": "PMFJJ",
+                              "name": "mobileThemeRowInCard",
+                              "width": "fill_container",
+                              "justifyContent": "end"
+                            },
+                            {
+                              "type": "text",
+                              "id": "oEU5n",
+                              "name": "Title",
+                              "fill": "$Text",
+                              "content": "로그인",
+                              "fontFamily": "Manrope",
+                              "fontSize": 18,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ykfFh",
+                              "name": "Description",
+                              "fill": "$Text Muted",
+                              "content": "계정 정보를 입력해 주세요.",
+                              "fontFamily": "Manrope",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        "vG9G7": {
+                          "type": "frame",
+                          "id": "KsFWI",
+                          "name": "mobileContent",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": [
+                            0,
+                            24,
+                            24,
+                            24
+                          ],
+                          "children": [
+                            {
+                              "id": "vGbOk",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "mobileEmail",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "이메일"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "mail"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "name@company.com"
+                                },
+                                "ZaQH4": {
+                                  "content": "회사 이메일을 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "wbVxA",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "mobilePass",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "비밀번호"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "lock"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "비밀번호"
+                                },
+                                "ZaQH4": {
+                                  "content": "비밀번호를 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "VaUqP",
+                              "type": "ref",
+                              "ref": "GplgC",
+                              "width": "fill_container",
+                              "name": "loginSnsRef3"
+                            }
+                          ]
+                        },
+                        "vTl9J": {
+                          "enabled": false
+                        },
+                        "ORzhT/rj6ar": {
+                          "enabled": false
+                        },
+                        "ORzhT/O8Opq": {
+                          "content": "로그인"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a1ssH",
+              "name": "WebTablet",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7uLMF",
+                  "name": "webLabel",
+                  "fill": "$Text",
+                  "content": "Web / Tablet",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "YLVg6",
+                  "name": "Login/WebTablet",
+                  "width": 1024,
+                  "height": 768,
+                  "fill": "$Surface Soft",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "9EcL1",
+                      "type": "ref",
+                      "ref": "Miee5",
+                      "width": 460,
+                      "name": "webCard",
+                      "descendants": {
+                        "CKCgR": {
+                          "type": "frame",
+                          "id": "A7E2v",
+                          "name": "Header",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "padding": 24,
+                          "children": [
+                            {
+                              "id": "F2BC4",
+                              "type": "ref",
+                              "ref": "PMFJJ",
+                              "name": "webThemeRowInCard",
+                              "width": "fill_container",
+                              "justifyContent": "end"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BUW4R",
+                              "name": "Title",
+                              "fill": "$Text",
+                              "content": "로그인",
+                              "fontFamily": "Manrope",
+                              "fontSize": 18,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZPs6F",
+                              "name": "Description",
+                              "fill": "$Text Muted",
+                              "content": "계정 정보를 입력해 주세요.",
+                              "fontFamily": "Manrope",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        "vG9G7": {
+                          "type": "frame",
+                          "id": "uBjK5",
+                          "name": "webContent",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": [
+                            0,
+                            24,
+                            24,
+                            24
+                          ],
+                          "children": [
+                            {
+                              "id": "FFG1G",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "webEmail",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "이메일"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "mail"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "name@company.com"
+                                },
+                                "ZaQH4": {
+                                  "content": "회사 이메일"
+                                }
+                              }
+                            },
+                            {
+                              "id": "eNNQG",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "webPass",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "비밀번호"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "lock"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "비밀번호"
+                                },
+                                "ZaQH4": {
+                                  "content": "비밀번호를 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "P7BR8",
+                              "type": "ref",
+                              "ref": "GplgC",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "padding": 12,
+                              "name": "loginWebSnsRef",
+                              "descendants": {
+                                "h191p": {
+                                  "content": "또는 SNS로 간편 로그인"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "vTl9J": {
+                          "enabled": false
+                        },
+                        "ORzhT/rj6ar": {
+                          "enabled": false
+                        },
+                        "ORzhT/O8Opq": {
+                          "content": "로그인"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tjRyN",
+          "name": "Auth/Error Toast Layer",
+          "width": 1500,
+          "fill": "$View BG",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "NF3oR",
+              "name": "errorTitle",
+              "fill": "$Text",
+              "content": "토스트 표시",
+              "fontFamily": "Manrope",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "gXPik",
+              "name": "sectionRow",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jibnx",
+                  "name": "Login Error",
+                  "width": "fill_container",
+                  "fill": "$Surface",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hXF4U",
+                      "name": "loginMobileGroup",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "id": "qpCa8",
+                          "type": "ref",
+                          "ref": "6tQN5",
+                          "name": "loginMobileToast",
+                          "descendants": {
+                            "lOOw7": {
+                              "content": "로그인 실패: 이메일 또는 비밀번호를 확인하세요."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XGG5X",
+      "x": 2220,
+      "y": 1387,
+      "name": "Auth/Signup Layer",
+      "fill": "$View BG",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 24,
+      "children": [
+        {
+          "type": "text",
+          "id": "5U5YA",
+          "name": "signupTitle",
+          "fill": "$Text",
+          "content": "회원가입 화면",
+          "fontFamily": "Manrope",
+          "fontSize": 28,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "foUT7",
+          "name": "signupRow",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "kIU0q",
+              "name": "Mobile",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "19BQQ",
+                  "name": "sMobileLabel",
+                  "fill": "$Text",
+                  "content": "Mobile",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "SDRcm",
+                  "name": "Signup/Mobile",
+                  "width": 390,
+                  "height": 844,
+                  "fill": "$Surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "bBbfM",
+                      "type": "ref",
+                      "ref": "Miee5",
+                      "width": "fill_container",
+                      "name": "sMobileCard",
+                      "descendants": {
+                        "XWwUM": {
+                          "content": "회원가입"
+                        },
+                        "FBkFC": {
+                          "content": "새 계정을 생성해 주세요."
+                        },
+                        "vG9G7": {
+                          "type": "frame",
+                          "id": "2wE3J",
+                          "name": "sMobileContent",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": [
+                            0,
+                            24,
+                            24,
+                            24
+                          ],
+                          "children": [
+                            {
+                              "id": "uAxWh",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sName",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "이름"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "user"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "홍길동"
+                                },
+                                "ZaQH4": {
+                                  "content": "실명을 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "iiX7W",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sEmail",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "이메일"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "mail"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "name@company.com"
+                                },
+                                "ZaQH4": {
+                                  "content": "로그인에 사용할 이메일을 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "i7GRI",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sPass",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "비밀번호"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "lock"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "비밀번호"
+                                },
+                                "ZaQH4": {
+                                  "content": "8자 이상 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "HMzkc",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sMobileConfirm",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "비밀번호 확인"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "lock"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "비밀번호 확인"
+                                },
+                                "ZaQH4": {
+                                  "content": "비밀번호를 한번 더 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "He3ao",
+                              "type": "ref",
+                              "ref": "GplgC",
+                              "width": "fill_container",
+                              "name": "signupSnsRef3"
+                            }
+                          ]
+                        },
+                        "T3m6i": {
+                          "padding": [
+                            12,
+                            24
+                          ]
+                        },
+                        "vTl9J": {
+                          "enabled": false
+                        },
+                        "ORzhT/rj6ar": {
+                          "enabled": false
+                        },
+                        "ORzhT/O8Opq": {
+                          "content": "회원가입"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pSbaf",
+              "name": "WebTablet",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cbS0Z",
+                  "name": "sWebLabel",
+                  "fill": "$Text",
+                  "content": "Web / Tablet",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "nFAId",
+                  "name": "Signup/WebTablet",
+                  "width": 1024,
+                  "height": 768,
+                  "fill": "$Surface Soft",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "hZ9Fj",
+                      "type": "ref",
+                      "ref": "Miee5",
+                      "width": 500,
+                      "name": "sWebCard",
+                      "descendants": {
+                        "XWwUM": {
+                          "content": "회원가입"
+                        },
+                        "FBkFC": {
+                          "content": "새 계정을 생성해 주세요."
+                        },
+                        "vG9G7": {
+                          "type": "frame",
+                          "id": "EYYqb",
+                          "name": "sWebContent",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": [
+                            0,
+                            24,
+                            24,
+                            24
+                          ],
+                          "children": [
+                            {
+                              "id": "NeYcc",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sWebName",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "이름"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "user"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "홍길동"
+                                },
+                                "ZaQH4": {
+                                  "content": "실명을 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "nnXin",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sWebEmail",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "이메일"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "mail"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "name@company.com"
+                                },
+                                "ZaQH4": {
+                                  "content": "로그인에 사용할 이메일을 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "rof3z",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sWebPass",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "비밀번호"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "lock"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "비밀번호"
+                                },
+                                "ZaQH4": {
+                                  "content": "8자 이상 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "S277x",
+                              "type": "ref",
+                              "ref": "Xx7JI",
+                              "width": "fill_container",
+                              "name": "sWebConfirm",
+                              "descendants": {
+                                "OKtq2": {
+                                  "content": "비밀번호 확인"
+                                },
+                                "aHy9b/O9Cab": {
+                                  "iconFontName": "lock"
+                                },
+                                "aHy9b/QdYPT": {
+                                  "content": "비밀번호 확인"
+                                },
+                                "ZaQH4": {
+                                  "content": "비밀번호를 한번 더 입력하세요."
+                                }
+                              }
+                            },
+                            {
+                              "id": "vAAqs",
+                              "type": "ref",
+                              "ref": "GplgC",
+                              "width": "fill_container",
+                              "name": "signupWebSnsRef"
+                            }
+                          ]
+                        },
+                        "T3m6i": {
+                          "padding": [
+                            12,
+                            24
+                          ]
+                        },
+                        "vTl9J": {
+                          "enabled": false
+                        },
+                        "ORzhT/rj6ar": {
+                          "enabled": false
+                        },
+                        "ORzhT/O8Opq": {
+                          "content": "회원가입"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "4oBeq",
+          "name": "Auth/Error Toast Layer",
+          "width": 1500,
+          "fill": "$View BG",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "gMeus",
+              "name": "errorTitle",
+              "fill": "$Text",
+              "content": "토스트 표시",
+              "fontFamily": "Manrope",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "7DrRn",
+              "name": "sectionRow",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XrMXj",
+                  "name": "Signup Error",
+                  "width": "fill_container",
+                  "fill": "$Surface",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "s7ndo",
+                      "name": "signupMobileGroup",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "id": "KzzwB",
+                          "type": "ref",
+                          "ref": "6tQN5",
+                          "name": "signupMobileToast",
+                          "descendants": {
+                            "lOOw7": {
+                              "content": "회원가입 실패: 입력값을 다시 확인해 주세요."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lRc5O",
+      "x": 3888,
+      "y": 0,
+      "name": "Main/Home Layer",
+      "width": 1900,
+      "fill": "$View BG",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 24,
+      "children": [
+        {
+          "type": "text",
+          "id": "Lu3OV",
+          "name": "mainTitle",
+          "fill": "$Text",
+          "content": "공지 화면",
+          "fontFamily": "Manrope",
+          "fontSize": 28,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "DTlre",
+          "name": "mainRow",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "e4nij",
+              "name": "Mobile",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bCCFA",
+                  "name": "mobileLabel",
+                  "fill": "$Text",
+                  "content": "Mobile",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "hljuX",
+                  "name": "Mobile States",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "QbWmN",
+                      "name": "Main/Mobile",
+                      "width": 390,
+                      "height": 690,
+                      "fill": "$Surface",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$Border"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "GvR58",
+                          "name": "mobileMenuHeader",
+                          "width": "fill_container",
+                          "padding": [
+                            4,
+                            2
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "JIllU",
+                              "name": "mobileHeaderTitle",
+                              "fill": "$Text",
+                              "content": "홈",
+                              "fontFamily": "Manrope",
+                              "fontSize": 18,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "id": "eszPU",
+                              "type": "ref",
+                              "ref": "kOlZQ",
+                              "name": "menuBtn",
+                              "descendants": {
+                                "H3bTH": {
+                                  "iconFontName": "menu"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "MjlLc",
+                      "type": "ref",
+                      "ref": "mAcIl",
+                      "name": "Main/Mobile/MenuOpen",
+                      "width": 390,
+                      "height": 690
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hbWsZ",
+              "name": "WebTablet",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HEEz2",
+                  "name": "webLabel",
+                  "fill": "$Text",
+                  "content": "Web / Tablet",
+                  "fontFamily": "Manrope",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "mlZkY",
+                  "name": "Main/WebTablet",
+                  "width": 1024,
+                  "height": 768,
+                  "fill": "$Surface Soft",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$Border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "0FDb0",
+                      "type": "ref",
+                      "ref": "xhDT0",
+                      "width": "fill_container",
+                      "name": "webNav",
+                      "descendants": {
+                        "qcmC1": {
+                          "enabled": true
+                        },
+                        "P2VAN": {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "jC1g7": {
+                          "x": 48,
+                          "y": 0
+                        },
+                        "2qHWT": {
+                          "x": 96,
+                          "y": 2
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WGQer",
+                      "name": "webBody",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "children": [
+                        {
+                          "id": "Qqyxy",
+                          "type": "ref",
+                          "ref": "GGx7s",
+                          "height": "fill_container",
+                          "name": "webSidebar",
+                          "descendants": {
+                            "GXjug/8hcyF": {
+                              "content": "홈"
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e18as",
+                          "name": "webContent",
+                          "width": "fill_container",
+                          "height": "fill_container",
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 20
                         }
                       ]
                     }
